@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+service OrderService {
+    rpc PlaceOrder (PlaceOrderRequest) returns (OrderResponse);
+    rpc UpdateOrder (UpdateOrderRequest) returns (OrderResponse);
+}
+
+message PlaceOrderRequest {
+    int32 product_id = 1;
+    // Add other necessary fields
+}
+
+message UpdateOrderRequest {
+    int32 order_id = 1;
+    int32 product_id = 2;
+    // Add other necessary fields
+}
+
+message OrderResponse {
+    int32 order_id = 1;
+    string order_date = 2;
+    // Add other necessary fields
+}
