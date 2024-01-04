@@ -11,10 +11,15 @@ IDE: Pycharm
 
 **Step 2** : Run python3 OrderService.py and ProductService.py to start gRPC in a separate terminals
 
+***pyhton OrderService.py***
+***pyhton ProductService.py***
+
 **Step 3** : Start RabbitMQ service 
 
 **Step 4** : Run python3 NotificationService2Consumer.py and NotificationService1Consumer.py in seprate terminals
 
+***pyhton NotificationService2Consumer.py***
+***pyhton NotificationService1Consumer.py***
 
 **Note:** Solution build in windows OS 
 
